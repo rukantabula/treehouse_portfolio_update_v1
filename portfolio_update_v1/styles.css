@@ -88,11 +88,18 @@ header .profile-image:hover {
 .location {
   background-color: #222;
   color: yellow;
+  opacity: .9;
+}
+
+.header-name {
+  background-color: #222;
+  color: white;
+  opacity: .9;
 }
 .card {
   margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
+  padding: 20px 30px 30px;
+  max-width: 600px;
   text-align: left;
   background: #434349;
   border-bottom: 4px solid #ccc;
