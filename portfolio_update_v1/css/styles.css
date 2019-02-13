@@ -21,6 +21,12 @@ a:hover {
   color: #6633ff;
 }
 
+.active {
+  padding: 12px;
+  border-bottom: 2px solid yellow;
+  opacity: .6;
+}
+
 /* Section Styles */
 
 .main-nav {
@@ -31,6 +37,7 @@ a:hover {
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -55,17 +62,36 @@ a:hover {
   color: white
 }
 
-header {
+.url-link {
+  color: yellow;
+  opacity: .6;
+}
+
+.url-link:hover {
+  color: white;
+}
+
+.header-home {
   text-align: center;
-  background: url('images/bg-img.jpg') no-repeat top center ;
+  background: url('../images/home-header-bgimg.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
+
+.header-projects {
+  text-align: center;
+  background: url('../images/projects-header-bgimg.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 40px;
+}
+
 header {
   line-height: 1.5;
 }
-header .profile-image {
+.header-home  .profile-image {
   margin-top: 50px;
   width: 200px;
   height: 200px;
@@ -77,6 +103,16 @@ header .profile-image:hover {
   transform: scale(1.2);
 }
 
+h2 {
+  padding: 12px;
+  border-bottom: 0.5px solid yellow;
+  opacity: .6;
+}
+
+.header-title {
+  margin-top: 60px;
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -85,10 +121,22 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 }
+
 .location {
   background-color: #222;
   color: yellow;
   opacity: .9;
+}
+
+.project-title {
+  background-color: #eeeeee;
+  color: #2e2e30;
+  opacity: 1;
+  font-size: 30px;
+  margin-top: 250px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 0.5px solid #434349;
 }
 
 .header-name {
@@ -106,13 +154,26 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.card-realigned {
+  margin: 30px;
+  padding: 20px 30px 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: left;
+  background: #434349;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
 .card:hover {
-  border-color: #ff99ff;
+  border-color: yellow;
+  opacity: .6;
 }
 
 ul.skills {
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .skills li {
@@ -128,6 +189,30 @@ ul.skills {
   background: #0399ff;
 }
 
+.logo {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  float: right;
+}
+
+.project-img {
+  padding-right: 30px;
+  padding-bottom: 30px;
+  max-width: 60%;
+   height: auto;
+  float: left;
+  transition: all .5s;
+}
+
+.playstore-img {
+  padding-right: 30px;
+  margin-top: 10px;
+  max-width: 20%;
+   height: auto;
+  float: right;
+  transition: all .5s;
+}
+
 footer {
   width: 100%;
   min-height: 30px;
@@ -136,7 +221,7 @@ footer {
 
 footer .copyright {
   top: -8px;
-  font-size: .55em;
+  font-size: .65em;
 }
 
 footer ul {
@@ -187,6 +272,19 @@ a.social:hover {
       margin: 0 auto;
   }
 
+  .flex-realigned {
+      margin-left: 40px;
+      margin-right: 40px;
+      padding-top: 60px;
+      flex-direction: column;
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
   header {
     min-height: 470px;
   }
@@ -195,7 +293,6 @@ a.social:hover {
     max-width: 1200px;
     padding: 0 30px;
   }
-
 
   main {
     padding-top: 20px;
@@ -210,5 +307,4 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
-
 }
